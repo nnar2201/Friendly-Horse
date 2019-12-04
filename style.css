@@ -16,7 +16,11 @@ top:0px;
 text-align:far-left;
 }
 #header > #menu{
-
+text-decoration:none; 
+color:blue; 
+position:sticky; 
+top:-30px; 
+left: 600px;
 position:absolute;
 font-size:20px;
 bottom: 0px;
