@@ -1,3 +1,4 @@
+<style>
 body{background-color:#0CD6EE}
 html, body{ margin: 0px; text-align: center; }
 #header{
@@ -26,7 +27,16 @@ transition: height 0.3s linear 0s, padding 0.3s linear 0s;
 overflow:hidden
 }
 
-
+ #search{
+position:relative;
+font-size:20px;
+bottom:0px;
+width: 25%;
+background-color:none;
+height:20px;
+top:-35px;
+left: 1000px;
+}
 #s1 {
 transition: height 0.3s linear 0s;
 transition: height -0.3 lienar 0s;
@@ -35,7 +45,19 @@ height:25px;
 }
 #content{ margin-top: 230px;}
 
-
+#content {
+left: 50%;
+height:1500px;
+width: 900px;
+border: 2px solid maroon;
+background: grey;
+top: 160;
+margin:0 auto;
+padding-top: 210px;
+padding-bottom:210px;
+font-size: 40px;
+font-family: "Verdana";
+}
 
 p {padding-top: 210px;
 font-family: "Verdana";
@@ -63,26 +85,3 @@ border-color:transparent !important;
 }
 
 </style>
-<script>
-var header, menu, yPos, s1;
-function yScroll () {
-header= document.getElementById('header');
-menu = document.getElementById('menu');
-yPos = window.pageYOffset;
-s1 = document.getElementById('s1');
-if (yPos > 150) {
-header.style.height = "50px";
-header.style.paddingTop = "8px";
-menu.style.height = "0px";
-s1.style.height = "0px";
-s1.style.border = "none";
-}else {
-header.style.height = "120px";
-header.style.paddingTop = "50px";
-menu.style.height = "40px";
-s1.style.height = "25px";
-s1.style.border = "3px solid #7A54B7";
-}
-}
-window.addEventListener ("scroll", yScroll);
-</script>
